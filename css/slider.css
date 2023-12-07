@@ -19,6 +19,42 @@ body {
   background: lightgray;
 }
 .slider__before {
+  width: 512px;
+  height: 512px;
+  position: absolute;
+  z-index: 2;
+  background: url("../assets/color.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.slider__after {
   width: 1024px;
   height: 512px;
+  position: absolute;
+  background: url("../assets/wb.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.slider__resize {
+  width: 5px;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: black;
+  cursor: e-resize;
+}
+.slider__resize::before {
+  content: "<";
+  position: absolute;
+  font-size: 30px;
+  font-weight: 900;
+  top: 50%;
+  right: 5px;
+}
+.slider__resize::after {
+  content: ">";
+  position: absolute;
+  font-size: 30px;
+  font-weight: 900;
+  top: 50%;
+  left: 5px;
 }
